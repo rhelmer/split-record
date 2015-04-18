@@ -8,7 +8,6 @@ import sys
 
 if os.isatty(0):
     print 'tracklist on stdin required!'
-    print __doc__
     sys.exit(1)
 
 sides = {}
@@ -36,7 +35,9 @@ for side in sides:
     for track in sides[side]:
         (num, name, time) = track
         t = datetime.datetime.strptime(time, '%M:%S')
-        time = t.strftime('%H:%M:%S')
-        print 'ffmpeg -i "%s" -ss %s -t %s "%s.mp3"' % (side, seek, time, name)
+        subprocess.call(
+            ['ffmpeg', '-i' ,'%s' % side, '-ss', '%s' % seek,
+             '-t', '%s' %time, '%s.mp3' % name]
+        )
         delta = datetime.timedelta(minutes=t.minute, seconds=t.second)
         seek += delta
