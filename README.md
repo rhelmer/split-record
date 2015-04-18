@@ -13,11 +13,11 @@ Sides are separated by a newline.
 
 For example:
 ```
-Album-Side1.wav
+Artist Album - Side 1.mp3
 1 Track Name One 1:23
 2 Track Name Two 3:11
 
-Album-Side2.wav
+Artist Album - Side 2.mp3
 3 Track Name Three 0:34
 4 Track Name Four 4:23
 ```
