@@ -1,12 +1,12 @@
 Split Record
 ------------
 Given a recording (such as from vinyl discs) in any ffmpeg-supported
-audio format (ideally something lossless like WAV or flac), split-record
+audio format (ideally something lossless like WAV or flac), `split-record`
 splits the single recording into multiple MP3 files.
 
-You must have ffmpeg installed and on your $PATH.
+You must have `ffmpeg` installed and on your $PATH.
 
-Suggested usage: cat tracklist.txt | ./split-record.py
+Suggested usage: `cat tracklist.txt | ./split-record.py`
 
 Tracklist is read from stdin and it begins with the name of a
 side (which is used as the input filename) followed by one line for each
