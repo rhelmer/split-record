@@ -8,7 +8,7 @@ You must have ffmpeg installed and on your $PATH.
 
 Suggested usage: cat tracklist.txt | ./split-record.py
 
-Tracklist is read from stdin and is begins with the name of a
+Tracklist is read from stdin and it begins with the name of a
 side (which is used as the input filename) followed by one line for each
 track, consisting of track number, name, and duration.
 Sides are separated by a newline.
